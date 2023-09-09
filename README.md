@@ -12,7 +12,7 @@ There are several components still in progress:
 - One specific component.
 - The event handler for the send button.
 
-However, the primary objective has been achieved: to introduce the main chatbox feature. To view or hide the chatbox, click the plus/minus button located at the bottom right corner. Screenshots will be provided
+However, the primary objective has been achieved: to introduce the main chatbox feature. To view or hide the chatbox, click the plus/minus button located at the bottom right corner.
 
 Feel free to look at the code and use it if needed it.
 
