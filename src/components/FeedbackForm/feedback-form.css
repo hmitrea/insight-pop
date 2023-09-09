@@ -1,0 +1,57 @@
+.feedbackForm {
+  position: fixed; /* or absolute, depending on your layout */
+  bottom: 50px; /* position it 50px from the bottom of the viewport */
+  right: 50px; /* position it 50px from the right of the viewport */
+  width: 300px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px; /* rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* slight shadow */
+  z-index: 1000; /* ensure it's above other elements on the page */
+  transition: transform 0.3s ease; /* simple slide-up animation */
+  transform: translateY(0%); /* starting position */
+}
+.feedbackForm.hidden {
+  transform: translateY(100%); /* slide it down out of view */
+}
+
+select,
+textarea,
+button,
+input {
+  width: 100%; /* Make them span the full width of the container */
+  padding: 10px;
+  margin-bottom: 15px; /* consistent spacing */
+  border-radius: 5px;
+}
+.feedbackForm label {
+  display: block; /* Make the label a block element to ensure it takes the full width */
+  margin-bottom: 5px; /* Space between the label and the input field */
+  font-weight: 600; /* Make the font slightly bold */
+  color: #333; /* Adjust the font color, if necessary */
+}
+
+.feedbackForm input[type='email'] {
+  border: 1px solid #ccc; /* Consistent border like textarea */
+  font-size: 14px; /* Adjust font size */
+  height: 35px; /* Adjust the height to fit better */
+  box-sizing: border-box; /* Ensures padding is included in width */
+}
+
+.feedbackForm textarea {
+  height: 150px; /* increased height */
+  border: 1px solid #ccc; /* subtle border */
+  resize: vertical; /* Allow user to resize it vertically, but not horizontally */
+}
+
+.feedbackForm button {
+  background-color: #007bff; /* Example color */
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedbackForm button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
